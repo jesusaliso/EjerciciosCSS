@@ -1,16 +1,17 @@
 :root {
     --background-color: #f1f1f1;
     --ball-color: #ff0000;
-    --ball-size: 80px;
+    --ball-size: 50px;
   }
-
-body {
-  background-color: var(--background-color);
-}
-
-.ball {
+  
+  body {
+    background-color: var(--background-color);
+  }
+  
+  .ball {
+    background-color: var(--ball-color);
+    width: var(--ball-size);
     height: var(--ball-size);
-  background-color: var(--ball-color);
-  width: var(--ball-size);
-
-}
+    border-radius: 50%;
+  }
+  
