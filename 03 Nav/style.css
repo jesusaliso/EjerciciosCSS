@@ -1,0 +1,108 @@
+:root {
+  --default-padding: 14px 16px; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+}
+
+.navb-navbar a {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.navb-home a {
+  color: white;
+  font-weight: bold;
+}
+
+.navb-link a {
+  color: gray;
+}
+
+.navb-disa {
+  color: gray;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+  background-color: #26272b;
+  border-bottom: white solid;
+  height: 50px;   
+  
+}
+
+.navbar li a:hover {
+  background-color: #3d3d3e;
+}
+
+.navbar li a {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  padding: var(--default-padding);
+  text-decoration: none;
+}
+
+#nav-dropdown {
+  background-color: #26272b;
+  color: gray;
+  padding: var(--default-padding);
+  font-size: 14px;
+  border: 0;
+}
+
+#nav-dropdown:hover {
+  background-color: #3d3d3e;
+}
+
+#nav-dropdown:focus {
+  outline: none;
+}
+
+.nav-form {
+  padding: 10px 60px;
+}
+
+#navb-search {
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+}
+
+#navb-button {
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 0.4em;
+  border: green solid 1px;
+  color: green;
+  background-color: #26272b;
+}
+
+#navb-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border: green solid 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar li:not(.hamburger-menu) {
+    display: none;
+  }
+}
+
+.hamburger-menu a {
+  color: white;
+  font-weight: bold;
+}
+
