@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.calculadora {
+  height: 30vh;
+  width: 30vh;
+  display: grid;
+  grid-template-rows: repeat(4 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "resultado resultado resultado resultado"
+    "suma resta multiplicacion division"
+    "siete ocho nueve igual"
+    "cuatro cinco seis igual"
+    "uno dos tres igual"
+    "cero punto ac igual";
+}
+
+#resultado {
+  grid-area: resultado;
+  text-align: right;
+}
+
+#suma {
+  grid-area: suma;
+}
+
+#resta {
+  grid-area: resta;
+}
+
+#multiplicacion {
+  grid-area: multiplicacion;
+}
+
+#division {
+  grid-area: division;
+}
+
+#siete {
+  grid-area: siete;
+}
+
+#ocho {
+  grid-area: ocho;
+}
+
+#nueve {
+  grid-area: nueve;
+}
+
+#cuatro {
+  grid-area: cuatro;
+}
+
+#cinco {
+  grid-area: cinco;
+}
+
+#seis {
+  grid-area: seis;
+}
+
+#uno {
+  grid-area: uno;
+}
+
+#dos {
+  grid-area: dos;
+}
+
+#tres {
+  grid-area: tres;
+}
+
+#cero {
+  grid-area: cero;
+}
+
+#punto {
+  grid-area: punto;
+}
+
+#ac {
+  grid-area: ac;
+}
+
+#igual {
+  grid-area: igual;
+}

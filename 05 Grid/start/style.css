@@ -1,0 +1,183 @@
+:root {
+  --default-button-background-color: rgb(225, 225, 225);
+}
+
+
+.calculator {
+  background-color: rgb(52, 52, 52);
+  display: grid;
+  max-width: 300px;
+  height: 230px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  border-top: none;
+  grid-template-rows: repeat(4 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "resultado resultado resultado resultado"
+    "c-sum c-rest c-mult c-div"
+    "siete ocho nueve igual"
+    "cuatro cinco seis igual"
+    "uno dos tres igual"
+    "cero punto ac igual";
+}
+
+#result {
+  background: none;
+  border: none;
+  direction: rtl;
+  grid-area: resultado;
+  border-radius: 0.0rem 0.5rem 0.5rem 0.5rem;;
+  color: white;
+}
+
+#result::placeholder {
+ color: white;
+}
+
+#result:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
+.c-sum {
+  grid-area: c-sum;
+}
+
+.c-rest {
+  grid-area: c-rest;
+}
+
+.c-mult {
+  grid-area: c-mult;
+}
+
+.c-div {
+  grid-area: c-div;
+}
+
+.c-n7 {
+  grid-area: siete;
+}
+
+.c-n8 {
+  grid-area: ocho;
+}
+
+.c-n9 {
+  grid-area: nueve;
+}
+
+.c-n4 {
+  grid-area: cuatro;
+}
+
+.c-n5 {
+  grid-area: cinco;
+}
+
+.c-n6 {
+  grid-area: seis;
+}
+
+.c-n1 {
+  grid-area: uno;
+}
+
+.c-n2 {
+  grid-area: dos;
+}
+
+.c-n3 {
+  grid-area: tres;
+}
+
+.c-n0 {
+  grid-area: cero;
+}
+
+.c-po {
+  grid-area: punto;
+}
+
+.c-ac {
+  grid-area: ac;
+}
+
+.c-result {
+  grid-area: igual;
+}
+
+
+.c-sum, 
+.c-rest, 
+.c-mult, 
+.c-div {
+  border: var(--default-button-border);
+  background-color: rgb(204, 213, 231);
+  border-left-color: gray solid 2px;
+  border-bottom-color: gray solid 2px;
+}
+
+.c-div {
+  border-bottom: rgb(110, 149, 164) solid 1.5px;
+}
+
+
+
+.c-sum,
+.c-rest,
+.c-mult {
+  border-right: rgb(110, 149, 164) solid 1.5px;
+  border-bottom: rgb(110, 149, 164) solid 1.5px;
+}
+
+.c-n7,
+.c-n8,
+.c-n9 {
+  border: none;
+  border-right: rgb(110, 149, 164) solid 1.5px;
+  border-bottom: rgb(110, 149, 164) solid 1.5px;
+  background-color: var(--default-button-background-color);
+}
+
+.c-n4,
+.c-n5,
+.c-n6
+ {
+  border: none;
+  border-right: rgb(110, 149, 164) solid 1.5px;
+  border-bottom: rgb(110, 149, 164) solid 1.5px;
+  background-color: var(--default-button-background-color);
+}
+
+.c-n1,
+.c-n2,
+.c-n3 {
+  border: none;
+  border-right: rgb(110, 149, 164) solid 1.5px;
+  border-bottom: rgb(110, 149, 164) solid 1.5px;
+  background-color: var(--default-button-background-color);
+}
+
+.c-ac,
+.c-po {
+  border: none;
+  border-right: rgb(110, 149, 164) solid 1.5px;
+  border-bottom: rgb(110, 149, 164) solid 1.5px;
+  background-color: var(--default-button-background-color);
+}
+
+.c-n0 {
+  border: none;
+  border-right: rgb(110, 149, 164) solid 1.5px;
+  background-color: var(--default-button-background-color);
+}
+
+.c-result {
+  border: none;
+  background-color: lightcoral;
+}
+
