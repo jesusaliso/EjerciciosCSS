@@ -1,0 +1,86 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-areas:
+    "green green green"
+    "yellow red blue"
+    "orange orange blue";
+}
+
+#green {
+  grid-area: green;
+  max-height: 50%;
+}
+
+#yellow {
+  grid-area: yellow;
+}
+
+#orange {
+  grid-area: orange;
+}
+
+#red {
+  grid-area: red;
+}
+
+#blue {
+  grid-area: blue;
+}
+
+#yellow ul {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "yone ytwo"
+    "ythree yfour";
+}
+
+
+#yellow ul li:first-child {
+  grid-area: yone;
+}
+
+#yellow ul li :nth-child(2) {
+  grid-area: ytwo;
+}
+
+#yellow ul li:nth-child(3) {
+  grid-area: ythree;
+}
+
+#yellow ul li:last-child{
+  grid-area: yfour;
+}
+
+#red ul {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "rone rtwo"
+    "rthree rfour";
+}
+
+#red ul li:first-child {
+  grid-area: rone;
+}
+
+#red ul li :nth-child(2) {
+  grid-area: rtwo;
+}
+
+#red ul li:nth-child(3) {
+  grid-area: rthree;
+}
+
+#red ul li:last-child {
+  grid-area: rfour;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
