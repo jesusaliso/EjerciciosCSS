@@ -1,0 +1,30 @@
+.container-f {
+  display: flex;
+}
+
+#yellow {
+  order: -5;
+}
+
+#red {
+  order: -4;
+}
+
+#green {
+  order: -3;
+}
+
+#orange {
+  order: -2;
+  flex-basis: 100%;
+}
+
+#blue {
+  order: -1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
