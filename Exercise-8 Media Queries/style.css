@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: block;
+  background-color: lightgrey;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px lightgray;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  margin-top: 50px;
+  background: linear-gradient(gray, white);
+}
+
+.card-header {
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  width: auto;
+  padding: 2px;
+}
+
+.card-tittle-wrapper {
+  background-color: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+.card-tittle-info {
+  padding: 2px;
+}
+
+.card-tittle-name {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+}
+
+.card-tittle-day {
+  color: lightyellow;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-tittle-option {
+  margin-left: auto;
+}
+
+.card-tittle-btn {
+  display: flex; /* Utiliza flexbox para gestionar el diseño de los elementos internos */
+  justify-content: center; /* Alinea horizontalmente los elementos internos en el centro */
+  align-items: center; /* Alinea verticalmente los elementos internos en el centro */
+  width: 30px; /* Establece el ancho deseado para el botón */
+  height: 15px; /* Establece la altura deseada para el botón */
+  font-size: 30px;
+  background: none;
+  border: none;
+}
+
+.card-content-image {
+  height: 225px;
+  width: auto;
+  padding: 0;
+}
+
+.card-cat-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-like-comment {
+  display: flex;
+  height: 30px;
+  width: auto;
+  padding: 0;
+}
+
+.card-like-icon,
+.card-comment-icon {
+  height: 20px;
+  width: 20px;
+  margin: 5px 5px 0px 20px;
+}
+
+.card-description {
+  padding: 5px;
+}
+
+.card-description-tittle {
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .card-container {
+      width: 90%; 
+      font-size: 14px; 
+    }
+  }
+  
+  /* Estilos para la vista móvil (hasta 375px) */
+  
+  @media (max-width: 375px) {
+    .card-container {
+      width: 100%; 
+      font-size: 12px; 
+    }
+  }
